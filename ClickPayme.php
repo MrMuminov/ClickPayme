@@ -202,8 +202,7 @@ class ClickPayme extends CApplicationComponent
             'method' => $method,
             'params' => $params
         ];
-        // var_dump(json_encode($body));
-        // exit;
+        
         $headers = [];
         $headers[] = "X-Auth: " . $merchant_id . ":" . $merchant_key;
         $headers[] = 'Accept: application/json';
